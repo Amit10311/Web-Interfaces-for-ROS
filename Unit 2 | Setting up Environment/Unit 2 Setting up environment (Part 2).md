@@ -21,7 +21,7 @@ We'll set up a JavaScript framework, **Vue.js**, and define a standard to **debu
 Step 1 : Environment preparation 
 </b></p>
 
-Let's prepare the environment for this Unit 02 .
+Let's prepare the environment for this **Unit 02**, create a new folder for it..
 
 
 ## Topic 2.2 How do you use it? How do you debug?  <a name="paragraph2"></a>
