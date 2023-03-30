@@ -31,7 +31,7 @@ From the essential to advanced widgets, learn how to control and monitor robots 
 13. Final Project
 
 
-**What You Will Learn***
+**What You Will Learn**
 
 * Understand how to make ROS data available to other environments
 
