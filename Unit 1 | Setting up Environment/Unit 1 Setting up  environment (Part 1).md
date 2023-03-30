@@ -119,4 +119,127 @@ There are two important things that make a web page look better.
 
 We won't work with CSS in this course, since it's not about styling web pages, but will only use some existing styles to make our web page clearer.
 
+The first step to add some style is to add the library we are going to use.
+
+In order to do this, add to the `<head>` section of your **index.html** the following:
+ 
+ ```html
+<head>
+    <title>My first web page for ROS!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+```
+# 
+
+<p align="center"><b>
+Step 4 :  Adjusting HTML to use styles 
+</b></p>
+
+ There are some different ways a **CSS** file can change the **HTML** appearance. 
+ It can customize the elements by the **tag, class, id,** and other selectors that, for the sake of simplicity, we won't use.
+
+If you just reload the web page, you will notice that it is slightly different because of the **tag selectors** of the bootstrap library.
+
+Now, we are going to use some **classes**.
+Let's modify the **HTML** in order to use them. 
+
+```html
+<html>
+
+<head>
+	<title>My first web page for ROS!</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column h-100">
+	<!-- header of the page -->
+	<header class="header">
+		<div class="container">
+			<div class="jumbotron text-center">
+				<h1>Hello from Robot Ignite Academy!</h1>
+				<p>Let's connect our website to a ROS robot!</p>
+			</div>
+		</div>
+	</header>
+
+	<!-- main content -->
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-body">
+							<h3>Menu</h3>
+							<p>This is the left side of my web page. It occupies 33% of the total width</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<h2 class="text-center">Main content</h2>
+							<p>Here it goes the main content of my web page.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- footer -->
+	<footer class="footer mt-auto bg-dark text-light">
+		<div class="container">
+			<h5>page ends here!</h5>
+		</div>
+	</footer>
+</body>
+
+</html>
+```
+
+You must have a pretty web page with styles and harmony between the elements! 
+
+ ![image](https://user-images.githubusercontent.com/20908007/228871698-f61f2ac3-e7f3-4fac-808c-e9dee65bc3bf.png)
+
+ 
+* If you go through the **HTML** code, you will notice that we have added many different **tags** and **classes**. 
+ 
+For example: Some **div** elements belong to the class **container**, which describes the behavior of having a **block that fits the entire width of the page**.
+
+**Note :** The **grid system** that allows us to define **rows** (we have a div using the class **row**).
+It defines an element that fills the entire width of a **container**. Inside a row, we have **columns**. 
+Now, here's the trick! Every row must have **12** (yes, exaclty 12!!) units of columns
+
+
+In our case, we created just **2 columns**,
+ * but we defined the **first one with [4]** units (**col-md-4**) and the second with [**8**] units (**col-md-8**).
+
+The **-md-** means it will be applied to **medium size pages**. You can check the size definition below (taken from bootstrap page):
+
+* Extra small (**xs**) : width is **< 576px**
+* Small (**sm**) : width is **≥576px**
+* Medium (**md**) : width is **≥768px**
+* Large (**lg**) : width is **≥992px**
+* Extra large (**xl**) : **≥1200px**
+
+If you want to better understand the **grid system**,
+* please check this page: https://getbootstrap.com/docs/4.3/layout/grid/
+
+![Screenshot from 2023-03-30 16-44-57](https://user-images.githubusercontent.com/20908007/228873876-5365711c-396e-4fe3-88a8-eed9d98dc6cc.png)
+
+We have also used a very modern and nice element, called card. 
+* Please check the reference here: https://getbootstrap.com/docs/4.3/components/card/
+
+![image](https://user-images.githubusercontent.com/20908007/228874876-ea071fca-33ee-4de5-b31b-cb90570c65ca.png)
+
+
+
+
+
+
+
+
+
 
