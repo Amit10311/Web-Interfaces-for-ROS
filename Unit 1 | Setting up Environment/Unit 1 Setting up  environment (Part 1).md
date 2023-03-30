@@ -312,14 +312,13 @@ Ex index.html
 </html>
 ```
 
-## Questions  
+## Questions <a name="paragraph4"></a> 
 
-1.  The title of a webpage can be defined by using the tag:
-  * <title />
+1. The title of a webpage can be defined by using the tag:
+   * <title />
 
 2. When using bootstrap css library, how many columns a row grid is supposed to contain by default?
-  *  12 
-
+   *  12 
 
 3. Which kind of server is used to **host a webpage**?
-  * HTTP 
+   * HTTP 
