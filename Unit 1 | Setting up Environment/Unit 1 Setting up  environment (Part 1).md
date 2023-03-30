@@ -93,11 +93,25 @@ In a different web shell, execute the command below:
 
 ```
 $ webpage_address
+```
+You must get something similar to:
+```
 https://i-02131eed912e2497d.robotigniteacademy.com/6336074d-6041-4ed8-9368-754414639243/webpage/
 ```
 
+## Topic 1.2   Adding some styles to the page
 
+Let's make webpage a bit nicer.
 
+A very famous library to construct layouts and beautify web pages is called **Bootstrap** (https://getbootstrap.com/). 
 
+<p align="center"><b>
+Step 3 :  Adding bootstrap library to the page  
+</b></p>
+
+There are two important things that make a web page look better. 
+* You need to **create the structure (HTML)** and **add some styles (CSS)**. 
+* 
+We won't work with CSS in this course, since it's not about styling web pages, but will only use some existing styles to make our web page clearer.
 
 
