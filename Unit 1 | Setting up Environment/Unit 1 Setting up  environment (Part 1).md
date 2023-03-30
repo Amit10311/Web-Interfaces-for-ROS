@@ -1,7 +1,7 @@
 ### Table of contents
 1. [Topic 1.1   Creating and running a web page](#paragraph1)
 2. [Topic 1.2   Adding some styles to the page](#paragraph2)
-
+3. [Topic 1.3   Let's Practice!](#paragraph3)
 
 # Unit 1:   Setting up our development environment (Part 1)
 
@@ -224,22 +224,145 @@ The **-md-** means it will be applied to **medium size pages**. You can check th
 * Large (**lg**) : width is **≥992px**
 * Extra large (**xl**) : **≥1200px**
 
+
 If you want to better understand the **grid system**,
+
 * please check this page: https://getbootstrap.com/docs/4.3/layout/grid/
 
 ![Screenshot from 2023-03-30 16-44-57](https://user-images.githubusercontent.com/20908007/228873876-5365711c-396e-4fe3-88a8-eed9d98dc6cc.png)
 
-We have also used a very modern and nice element, called card. 
+We have also used a very modern and nice element, called **card**. 
+
 * Please check the reference here: https://getbootstrap.com/docs/4.3/components/card/
 
 ![image](https://user-images.githubusercontent.com/20908007/228874876-ea071fca-33ee-4de5-b31b-cb90570c65ca.png)
 
 
 
+## Topic 1.3   Let's Practice! <a name="paragraph3"></a>
 
+<p align="center">
+- Exercise 1.3 -
+</p>
 
+Let's fix the knowledge of html + css using the bootstrap library to define grids. 
 
+* Instead of occupying sizes of **4 and 8**, change the columns to use half in each one, if the page is **large**. 
+* Make it occupy the entire width of each one, if the webpage is small (**sm**).
 
+*Remember you can test it by resizing the screen. Also try using not only the webpage render of the course page, but another tab, by copying the webpage_address value and opening it.*
+
+<p align="center">
+Ex index.html  : 
+</p>
+
+```html
+<html>
+
+<head>
+    <title>My first web page for ROS!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!-- header of the page -->
+    <header class="header">
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1>Hello from Robot Ignite Academy!</h1>
+                <p>Let's connect our website to a ROS robot!</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Menu</h3>
+                            <p>This is the left side of my web page. It occupies 33% of the total width</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="text-center">Main content</h2>
+                            <p>Here it goes the main content of my web page.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer mt-auto bg-dark text-light">
+        <div class="container">
+            <h5>page ends here!</h5>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<html>
+
+<head>
+    <title>My first web page for ROS!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!-- header of the page -->
+    <header class="header">
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1>Hello from Robot Ignite Academy!</h1>
+                <p>Let's connect our website to a ROS robot!</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Menu</h3>
+                            <p>This is the left side of my web page. It occupies 33% of the total width</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="text-center">Main content</h2>
+                            <p>Here it goes the main content of my web page.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer mt-auto bg-dark text-light">
+        <div class="container">
+            <h5>page ends here!</h5>
+        </div>
+    </footer>
+</body>
+
+</html>
+``
 
 
 
