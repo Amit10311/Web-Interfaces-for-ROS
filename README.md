@@ -22,7 +22,7 @@ From the essential to advanced widgets, learn how to control and monitor robots 
 
 9. Showing a map on the web page
 
-10 .Tunning your robotics algorithms! ROS Parameters!
+10.Tunning your robotics algorithms! ROS Parameters!
 
 11. 3D Visualization for Robots on Webpages
 
