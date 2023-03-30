@@ -2,6 +2,7 @@
 1. [Topic 1.1   Creating and running a web page](#paragraph1)
 2. [Topic 1.2   Adding some styles to the page](#paragraph2)
 3. [Topic 1.3   Let's Practice!](#paragraph3)
+4. [Questions](#paragraph4)
 
 # Unit 1:   Setting up our development environment (Part 1)
 
@@ -309,7 +310,16 @@ Ex index.html
 </body>
 
 </html>
-``
+```
+
+## Questions  
+
+1.  The title of a webpage can be defined by using the tag:
+  * <title />
+
+2. When using bootstrap css library, how many columns a row grid is supposed to contain by default?
+  *  12 
 
 
-
+3. Which kind of server is used to **host a webpage**?
+  * HTTP 
