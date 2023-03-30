@@ -372,6 +372,8 @@ Ex 2 : index.html
 </html>
 ```
 
+![Screenshot from 2023-03-30 17-40-49](https://user-images.githubusercontent.com/20908007/228890460-a4eb9366-71b5-4106-8289-48ef005afc44.png)
+
 
 ## Questions <a name="paragraph4"></a> 
 
