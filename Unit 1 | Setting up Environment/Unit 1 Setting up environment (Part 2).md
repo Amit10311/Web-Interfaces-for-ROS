@@ -11,25 +11,23 @@
 
 **- Summary -**
  
-This unit is a general idea about web development.
-We'll setup the development environment for the rest of the course. 
+This unit is a general idea about **Javascript**. 
+We'll set up a JavaScript framework, **Vue.js**, and define a standard to **debug the code** we are going to create throughout the course.
 
-After setting up the environment, we will introduce a **CSS** framework for better web page creationg: **Bootstrap**.
  
 ## Topic 2.1   What is JavaScript?  <a name="paragraph1"></a>
 
 <p align="center"><b>
-Step 1 : Create and run an index.html file
+Step 1 : Environment preparation 
 </b></p>
 
-
-
+Let's prepare the environment for this Unit 02 .
 
 
 ## Topic 2.2 How do you use it? How do you debug?  <a name="paragraph2"></a>
 
 <p align="center"><b>
-Step 1 : Create and run an index.html file
+Step 2 : Create and run an index.html file
 </b></p>
 
 
