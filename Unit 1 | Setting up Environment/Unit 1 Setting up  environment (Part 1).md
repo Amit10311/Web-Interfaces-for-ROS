@@ -57,16 +57,20 @@ But first, we need to have a **web server** making this page available on the in
 Step 2 : Run a web server 
 </b></p>
          
-Let's go to an available web shell and get into the folder that contains our web page
+Let's go to an available web shell and get into the folder that contains our web page 
+
 ```
 $ cd ~/webpage_ws/unit_01
 ```
+
 And start a HTTP web server:
+
 ```
 $ python -m SimpleHTTPServer 7000
 Serving HTTP on 0.0.0.0 port 7000 ...
 192.168.0.1 - - [30/Mar/2023 14:12:35] "GET / HTTP/1.0" 200 -
 ```
+
 Your web shell will get busy. Keep it like that, as the server must be running there.
 
 It's chosen the port 7000 for our course because our platform makes the website available in a secure connection through this port.
@@ -87,8 +91,10 @@ In order to do so, you need the **public address of our page.**
 In a similar way as we did to find out the address of the `rosbridge server`, we have to do this for the website server. 
 In a different web shell, execute the command below:
 
-
-
+```
+$ webpage_address
+https://i-02131eed912e2497d.robotigniteacademy.com/6336074d-6041-4ed8-9368-754414639243/webpage/
+```
 
 
 
