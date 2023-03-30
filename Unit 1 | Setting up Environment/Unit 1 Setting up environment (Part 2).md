@@ -49,7 +49,8 @@ Basically, the values from our **Vue object**, from the **main.js** file, are go
 
 Let's practice a bit more using VUE to change the content on the web page.
 
-Change the two paragraphs we have (**<p>**) and make their content come from the javascript file, like we did for the subtitles.
+
+Change the two paragraphs we have **`(<p>)`** and make their content come from the javascript file, like we did for the subtitles.
 
 
 
