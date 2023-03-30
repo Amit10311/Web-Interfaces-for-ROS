@@ -1,9 +1,9 @@
-# Unit 1:   Setting up our development environment (Part 1)
-
-# Table of contents
+### Table of contents
 1. [Topic 1.1   Creating and running a web page](#paragraph1)
 2. [Topic 1.2   Adding some styles to the page](#paragraph2)
 
+
+# Unit 1:   Setting up our development environment (Part 1)
 
 **- Summary -**
  
