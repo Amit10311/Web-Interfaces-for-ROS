@@ -66,6 +66,15 @@ And start a HTTP web server:
 $ python -m SimpleHTTPServer 7000
 Serving HTTP on 0.0.0.0 port 7000 ...
 ```
+Your web shell will get busy. Keep it like that, as the server must be running there.
+
+It's chosen the port 7000 for our course because our platform makes the website available in a secure connection through this port.
+
+In order to access the website, we offer you two options:
+
+1. Use the **webpage** tab inside the course page: 
+
+![Screenshot from 2023-03-30 16-13-00](https://user-images.githubusercontent.com/20908007/228864283-086e3cd7-3510-4191-a33c-8eb6cbb8d18e.png)
 
 
 
