@@ -254,7 +254,7 @@ Let's fix the knowledge of html + css using the bootstrap library to define grid
 *Remember you can test it by resizing the screen. Also try using not only the webpage render of the course page, but another tab, by copying the webpage_address value and opening it.*
 
 <p align="center">
-Ex index.html 
+Ex 1 : index.html 
 </p>
 
 ```html
@@ -311,6 +311,67 @@ Ex index.html
 
 </html>
 ```
+
+<p align="center">
+Ex 2 : index.html 
+</p>
+
+```html
+<html>
+
+<head>
+    <title>My first web page for ROS!</title>
+    <script type="js/main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!-- header of the page -->
+    <header class="header">
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1>Hello from Robot Ignite Academy!</h1>
+                <p>Let's connect our website to a ROS robot!</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Menu</h3>
+                            <p>This is the left side of my web page. It occupies 33% of the total width</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="text-center">Main content</h2>
+                            <p>Here it goes the main content of my web page.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer mt-auto bg-dark text-light">
+        <div class="container">
+            <h5>page ends here!</h5>
+        </div>
+    </footer>
+</body>
+
+</html>
+```
+
 
 ## Questions <a name="paragraph4"></a> 
 
