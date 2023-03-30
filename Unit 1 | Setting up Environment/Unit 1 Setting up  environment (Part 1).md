@@ -253,7 +253,7 @@ Let's fix the knowledge of html + css using the bootstrap library to define grid
 *Remember you can test it by resizing the screen. Also try using not only the webpage render of the course page, but another tab, by copying the webpage_address value and opening it.*
 
 <p align="center">
-Ex index.html  : 
+Ex index.html 
 </p>
 
 ```html
