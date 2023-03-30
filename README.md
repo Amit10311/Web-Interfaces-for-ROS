@@ -29,3 +29,20 @@ From the essential to advanced widgets, learn how to control and monitor robots 
 12. Using ROS Action Servers from the web
 
 13. Final Project
+
+
+**What You Will Learn***
+
+* Understand how to make ROS data available to other environments
+
+* Understand how to create simple but efficient web pages
+
+* How to publish to topics and control robots from the web
+
+* How to subscribe to topics and monitor ROS data from the web
+
+* How to work with ROS params from the web
+
+* How to consume ROS services and action servers from the web
+
+* Create powerful interfaces that show: 3D models, maps and camera images
