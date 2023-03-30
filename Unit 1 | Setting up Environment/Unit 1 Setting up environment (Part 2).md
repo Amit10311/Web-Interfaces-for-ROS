@@ -39,11 +39,17 @@ Step 1 : Create and run an index.html file
 
 
 
+**What did we do there?**
+
+Basically, the values from our **Vue object**, from the **main.js** file, are going to fill the places **{{ menu_title }}** and **{{ main_title }}**. 
+
 
 
 ## Topic 2.4 Practice! <a name="paragraph4"></a>
 
+Let's practice a bit more using VUE to change the content on the web page.
 
+Change the two paragraphs we have (**<p>**) and make their content come from the javascript file, like we did for the subtitles.
 
 
 
