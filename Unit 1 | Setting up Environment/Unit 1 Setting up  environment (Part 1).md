@@ -65,6 +65,7 @@ And start a HTTP web server:
 ```
 $ python -m SimpleHTTPServer 7000
 Serving HTTP on 0.0.0.0 port 7000 ...
+192.168.0.1 - - [30/Mar/2023 14:12:35] "GET / HTTP/1.0" 200 -
 ```
 Your web shell will get busy. Keep it like that, as the server must be running there.
 
@@ -75,6 +76,16 @@ In order to access the website, we offer you two options:
 1. Use the **webpage** tab inside the course page: 
 
 ![Screenshot from 2023-03-30 16-13-00](https://user-images.githubusercontent.com/20908007/228864283-086e3cd7-3510-4191-a33c-8eb6cbb8d18e.png)
+
+
+Every time you click over this button, the webpage is refreshed and you get the latest version of your code.
+
+1. Open the webpage in a **new tab of your web browser or even on a different device!**
+
+
+In order to do so, you need the **public address of our page.** 
+In a similar way as we did to find out the address of the `rosbridge server`, we have to do this for the website server. 
+In a different web shell, execute the command below:
 
 
 
