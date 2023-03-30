@@ -322,3 +322,6 @@ Ex index.html
 
 3. Which kind of server is used to **host a webpage**?
    * HTTP 
+   
+4. Which language is used to create styles for a webpage?
+   * CSS
