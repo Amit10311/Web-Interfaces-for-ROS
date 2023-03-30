@@ -1,13 +1,22 @@
 # Unit 1:   Setting up our development environment (Part 1)
 
+# Table of contents
+1. [Topic 1.1   Creating and running a web page](#Topic 1.1)
+2. [Topic 1.2   Adding some styles to the page](#Topic 1.2)
+
+
+## This is the introduction <a name="introduction"></a>
+Some introduction text, formatted in heading 2 style
+
+
 **- Summary -**
  
 This unit is a general idea about web development.
 We'll setup the development environment for the rest of the course. 
 
 After setting up the environment, we will introduce a **CSS** framework for better web page creationg: **Bootstrap**.
-
-## Topic 1.1   Creating and running a web page
+ 
+## Topic 1.1   Creating and running a web page  <a name="Topic 1.1"></a>
 
 <p align="center"><b>
 Step 1 : Create and run an index.html file
@@ -99,7 +108,7 @@ You must get something similar to:
 https://i-02131eed912e2497d.robotigniteacademy.com/6336074d-6041-4ed8-9368-754414639243/webpage/
 ```
 
-## Topic 1.2   Adding some styles to the page
+## Topic 1.2   Adding some styles to the page <a name="Topic 1.2"></a>
 
 Let's make webpage a bit nicer.
 
@@ -111,7 +120,7 @@ Step 3 :  Adding bootstrap library to the page
 
 There are two important things that make a web page look better. 
 * You need to **create the structure (HTML)** and **add some styles (CSS)**. 
-* 
+
 We won't work with CSS in this course, since it's not about styling web pages, but will only use some existing styles to make our web page clearer.
 
 
