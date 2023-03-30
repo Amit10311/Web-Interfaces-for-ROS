@@ -46,7 +46,7 @@ We are making all the ROS meta data (nodes, topics, services, params, etc.) avai
 ```
 $ roslaunch course_web_dev_ros web.launch
 ```
-
+#
 **2. Get the ROSBridge address of the computer assigned to you**
 
 Every time you open the academy, our platform assigns to you a different remote computer.
@@ -56,7 +56,12 @@ Go to web shell **#2** and execute the following:
 ```
 $ rosbridge_address
 ```
+Example 
+```
+wss://i-02131eed912e2497d.robotigniteacademy.com/6336074d-6041-4ed8-9368-754414639243/rosbridge/
+```
 
+# 
 **3. Connect to Rosbridge using the form below**
 
 Execute the cell below. You must have a web page generated there.
