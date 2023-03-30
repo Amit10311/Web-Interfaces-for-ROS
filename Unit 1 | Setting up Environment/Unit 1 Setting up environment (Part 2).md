@@ -41,7 +41,7 @@ Step 1 : Create and run an index.html file
 
 
 
-## Topic 2.4 Practice! <a name="paragraph3"></a>
+## Topic 2.4 Practice! <a name="paragraph4"></a>
 
 
 
