@@ -254,12 +254,49 @@ Change the two paragraphs we have **`(<p>)`** and make their content come from t
 index.html
 </b></p>
 
+
+```html
+<!-- main content -->
+<main id="vueApp">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>{{ menu_title }}</h3>
+                        <p>{{ p_content_01 }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-center">{{ main_title }}</h2>
+                        <p>{{ p_content_02 }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+```
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><b>
 main.js
 </b></p>
 
-
-```html 
+```js
 let vueApp = new Vue({
     el: "#vueApp",
     data: {
@@ -271,5 +308,20 @@ let vueApp = new Vue({
 })
 ```
 
+**OR**
 
+<p align="center"><b>
+main.js
+</b></p>
+
+```js
+let vueApp = new Vue({
+    el: "#vueApp",
+    data: {
+        menu_title: 'My menu title',
+        main_title: 'Main title, from Vue!!',
+        phrase: "This is the left side of my web page. It occupies 55% of the total width. This is the left side of my web page. Let's practice a bit more using VUE to change the content on the web page."
+    }
+})
+```
 
