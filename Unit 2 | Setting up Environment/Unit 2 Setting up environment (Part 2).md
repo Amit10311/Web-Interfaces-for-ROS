@@ -87,11 +87,33 @@ Now, if you reload the page, nothing seems to be different. So, **what are we do
 There is a very important tool we will use along the course, and it's called **Developer Tools (DevTools)**.
 Throughout the course, it will be shown features provided by **Google Chrome browser**, but similar tools are present on **Mozilla Firefox**.
 
+In order to access the **DevTools**, press F12 while you have a tab open. You must have a window like this one open:
+
+
+![image](https://user-images.githubusercontent.com/20908007/229127061-07e6bbc2-78b0-48c2-befc-436dae9e88b3.png)
+
+**2. Console** is where you can check the messages we output using the instruction console.log, and we'll use it to **identify errors** or just to better understand how our **code behaves**. 
+  * It even shows the line of the code that produced the log. 
+
+![image](https://user-images.githubusercontent.com/20908007/229127727-f5c2070c-4e7d-4001-a1b5-d75a3e16851a.png)
+
+**3. Network** tab shows all the established connections between JavaScript and other sources.
+  *  We will show it further when we have the **rosbridge connection established**.
+
 
 
 <p align="center"><b>
 Step 2 : - Debugging the tab inside the course page -
 </b></p>
+
+
+![image](https://user-images.githubusercontent.com/20908007/229128038-28032bf5-c7a8-4aca-9d77-a935d0169ca9.png)
+
+
+
+
+
+
 
 
 ## Topic 2.3 Basic setup of Vue.js framework  <a name="paragraph3"></a>
