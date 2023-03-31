@@ -9,6 +9,11 @@
 
 **- Summary -**
  
+In this unit, we'll **connect to ROSBridge**, as we have seen in the introduction, but now by creating our own code. 
+
+* You will see step-by-step **how to configure your JavaScript code** to connect from a **Vue.js** application. 
+
+* After that, we will publish to a **ROS topic** in order to move the robot in the simulation.
 
 
 <p align="center"><b>
