@@ -282,16 +282,6 @@ index.html
 ```
 
 
-
-
-
-
-
-
-
-
-
-
 <p align="center"><b>
 main.js
 </b></p>
@@ -324,4 +314,8 @@ let vueApp = new Vue({
     }
 })
 ```
+
+**OUTPUT**
+![Screenshot from 2023-03-31 16-15-13](https://user-images.githubusercontent.com/20908007/229145391-8a9f62ac-44b2-4f55-a5de-4121843fc973.png)
+
 
