@@ -139,23 +139,99 @@ Append the following instruction to the **head** tag:
 ```html
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
 ```
+Instead of a **link** tag, we use a script tag, also the attribute to reference the library is not **href**, but **src**.
+
+# 
+<p align="center"><b>
+Step 4 :  Using Vue.js library 
+</b></p>
+
+Since we are going to program a lot in JavaScript, we want to keep things organized. 
+The **first step** is to separate our JavaScript code from our **index.html** file
 
 
+Let's create a new file, in the same folder as **index.html**. It's called **main.js**.
+* And just after **footer** tag, let's add a reference to a file we have just created.
+
+Remove the **script** tag that we created to show a message in the console.
+
+At this point, our **head** must be like this:
+```html
+<head>
+	<title>My first web page for ROS!</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js">
+	</script>
+</head>
+```
+
+And the end of **index.html** file like:
+
+```html
+	...
+    </footer>
+	<script src="main.js"></script>
+</body>
+
+</html>
+```
+
+# 
+<p align="center"><b>
+Step 5 : Trying Vue.js features
+</b></p>
+
+Now, try to use some features of **Vue.js**. Let's put some code into the **main.js** file.
+
+```js
+let vueApp = new Vue({
+    el: "#vueApp",
+    data: {
+        menu_title: 'My menu title',
+        main_title: 'Main title, from Vue!!',
+    }
+})
+```
+
+We are defining a new **Vue object**, identified by the **ID vueApp**. 
+Everything inside the element with this ID can be accessed/modified by it.
 
 
+Let's identify our **main** content with this ID.
 
+In order to experiment with that, let's change the **index.html** file (only the main section):
 
-
-
-
-
-
-
+```html
+<!-- main content -->
+<main id="vueApp">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>{{ menu_title }}</h3>
+                        <p>This is the left side of my web page. It occupies 33% of the total width</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-center">{{ main_title }}</h2>
+                        <p>Here it goes the main content of my first web page, able to control ROS robots using web tools!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+```
 
 **What did we do there?**
 
 Basically, the values from our **Vue object**, from the **main.js** file, are going to fill the places **{{ menu_title }}** and **{{ main_title }}**. 
-
 
 
 
