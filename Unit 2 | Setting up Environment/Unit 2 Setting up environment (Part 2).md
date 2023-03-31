@@ -69,6 +69,24 @@ In our web page, let's add a new tag inside the **head** tag, just below the boo
 </script>
 ```
 
+**Example :** 
+
+```html
+<head>
+    <title>My first web page for ROS!</title>
+    <script
+    <link  href="https://stackpath.bootstrapcdn.com/  crossorigin="anonymous">
+    <script type="text/javascript">
+        console.log("Hello from JavaScript")
+    </script>
+</head>
+```
+
+Now, if you reload the page, nothing seems to be different. So, **what are we doing here?**
+
+There is a very important tool we will use along the course, and it's called **Developer Tools (DevTools)**.
+Throughout the course, it will be shown features provided by **Google Chrome browser**, but similar tools are present on **Mozilla Firefox**.
+
 
 
 <p align="center"><b>
