@@ -9,14 +9,37 @@
 
 **- Summary -**
  
-This unit is a general idea about **Javascript**. 
-
-We'll set up a JavaScript framework, **Vue.js**, and define a standard to **debug the code** we are going to create throughout the course.
 
 
 <p align="center"><b>
 Step 1 : Environment preparation 
 </b></p>
+ 
+
+Let's prepare the environment for this **Unit 03**, create a new folder for it..
+
+First, make sure you have **stopped the webserver** we started in the previous chapter. 
+
+```
+$ python -m SimpleHTTPServer 7000 
+```
+and press `Ctrl + c`
+
+
+Create a new folder: **webpage_ws/unit_03**. Enter the folder and execute the web server from there.
+
+```
+$ mkdir ~/webpage_ws/unit_03
+$ cd ~/webpage_ws/unit_03
+$ python -m SimpleHTTPServer 7000
+Serving HTTP on 0.0.0.0 port 7000 ...
+```
+
+Copy the **index.html** file from the previous unit to this new folder:
+
+```
+cp ~/webpage_ws/unit_02/* ~/webpage_ws/unit_03/
+```
  
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Topic 3.1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
@@ -47,7 +70,7 @@ Step 1 : Environment preparation
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Topic 3.3  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
-## Topic 3.2  Practice <a name="paragraph3"></a>
+## Topic 3.3  Practice <a name="paragraph3"></a>
 
 
 
