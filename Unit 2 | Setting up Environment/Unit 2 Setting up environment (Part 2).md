@@ -233,19 +233,43 @@ In order to experiment with that, let's change the **index.html** file (only the
 
 Basically, the values from our **Vue object**, from the **main.js** file, are going to fill the places **{{ menu_title }}** and **{{ main_title }}**. 
 
+**OUTPUT :**
+
+![Screenshot from 2023-03-31 15-49-56](https://user-images.githubusercontent.com/20908007/229138495-589db259-9228-471f-b7f4-4b5ce088bda3.png)
+
 
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Topic 2.4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 ## Topic 2.4 Practice! <a name="paragraph4"></a>
 
+
 Let's practice a bit more using VUE to change the content on the web page.
 
 
 Change the two paragraphs we have **`(<p>)`** and make their content come from the javascript file, like we did for the subtitles.
+**Files:**
+
+<p align="center"><b>
+index.html
+</b></p>
+
+<p align="center"><b>
+main.js
+</b></p>
 
 
-
+```html 
+let vueApp = new Vue({
+    el: "#vueApp",
+    data: {
+        menu_title: 'My menu title',
+        main_title: 'Main title, from Vue!!',
+        p_content_01: 'This is the left side of my web page. It occupies 33% of the total width',
+        p_content_02: 'Here it goes the main content of my first web page, able to control ROS robots using web tools!',
+    }
+})
+```
 
 
 
