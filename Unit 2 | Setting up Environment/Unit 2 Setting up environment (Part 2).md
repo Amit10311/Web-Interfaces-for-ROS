@@ -326,9 +326,8 @@ let vueApp = new Vue({
 ## Questions <a name="paragraph"></a>
 
 1. What is Vue.JS
-
-  * Vue.js is a frontend JavaScript framework, not a styling tool. 
-  * While Vue.js does provide some styling capabilities, such as scoped CSS and inline styles, it is primarily used for building user interfaces and single-page applications using JavaScript.
+   * Vue.js is a frontend JavaScript framework, not a styling tool. 
+   * While Vue.js does provide some styling capabilities, such as scoped CSS and inline styles, it is primarily used for building user interfaces and single-page applications using JavaScript.
 
 
 2. How to start a Python Web Server on port 7000?
