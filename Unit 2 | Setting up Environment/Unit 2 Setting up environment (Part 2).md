@@ -45,7 +45,8 @@ Copy the **index.html** file from the previous unit to this new folder:
 cp ~/webpage_ws/unit_01/index.html ~/webpage_ws/unit_02/index.html
 ```
 
- 
+ <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Topic 2.1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
 ## Topic 2.1   What is JavaScript ?  <a name="paragraph1"></a>
 
 * JavaScript is a language created to help develop dynamic web pages.
@@ -57,6 +58,8 @@ Web page contains HTML and can have CSS to add some style.  Now, to make things 
 
 * This programming language can **interact with external services, like APIs** through **assynchronous requests or websocket servers**.
 
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Topic 2.2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 ## Topic 2.2 How do you use it ? How do you debug?  <a name="paragraph2"></a>
 
@@ -95,28 +98,57 @@ In order to access the **DevTools**, press F12 while you have a tab open. You mu
 **2. Console** is where you can check the messages we output using the instruction console.log, and we'll use it to **identify errors** or just to better understand how our **code behaves**. 
   * It even shows the line of the code that produced the log. 
 
-![image](https://user-images.githubusercontent.com/20908007/229127727-f5c2070c-4e7d-4001-a1b5-d75a3e16851a.png)
+![image](https://user-images.githubusercontent.com/20908007/229128766-e876e8e6-023a-462a-95a9-1415283dc14b.png)
+
 
 **3. Network** tab shows all the established connections between JavaScript and other sources.
   *  We will show it further when we have the **rosbridge connection established**.
-
 
 
 <p align="center"><b>
 Step 2 : - Debugging the tab inside the course page -
 </b></p>
 
+If you have opened the DevTools using the course page, instead of a new browser tab, you may have noticed a lot of messages and content that do not belong to the page you have created so far. 
 
-![image](https://user-images.githubusercontent.com/20908007/229128038-28032bf5-c7a8-4aca-9d77-a935d0169ca9.png)
+In order to debug **only the webpage frame**, you have to choose it from the menu. Check the gif below:
 
-
-
-
-
+![topic_02_demo_console](https://user-images.githubusercontent.com/20908007/229128217-567c0a02-8bcd-4c0e-9e9b-3cfa4d38c468.gif)
 
 
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Topic 2.3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 ## Topic 2.3 Basic setup of Vue.js framework  <a name="paragraph3"></a>
+
+**Vue.js** is a "Progressive JavaScript Framework", created to be adopted incrementally. 
+* It means it can be **used in any web page** you may have, including the ones created from the bottom using a different framework. 
+
+
+**Que : Why use a framework?**
+* With JavaScript,  challenges we used to face in order to keep the appearance of the web site synchronized with the JavaScript logic. 
+
+# 
+<p align="center"><b>
+Step 3 : Adding Vue.js library 
+</b></p>
+
+This time, we are not including a style file, but JavaScript, so it goes a bit different. 
+Append the following instruction to the **head** tag:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -125,6 +157,9 @@ Step 2 : - Debugging the tab inside the course page -
 Basically, the values from our **Vue object**, from the **main.js** file, are going to fill the places **{{ menu_title }}** and **{{ main_title }}**. 
 
 
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Topic 2.4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 ## Topic 2.4 Practice! <a name="paragraph4"></a>
 
