@@ -50,6 +50,33 @@ cp ~/webpage_ws/unit_02/* ~/webpage_ws/unit_03/
 
 ## Topic 3.1   Lifecycle of the page <a name="paragraph1"></a>
 
+In our case, we have a **static web** page so far, but a **main.js** file that depends on the **HTML** content to do the magic of the framework.
+That's why we appended the reference to such file at the end of the **body** element.
+
+Something that comes out of the box, with **Vue.js**, is a method called **mounted**. 
+This method is called whenever the page gets ready. Update your **main.js** file with the content:
+
+```html
+let vueApp = new Vue({
+    el: "#vueApp",
+    data: {
+        menu_title: 'My menu title',
+        main_title: 'Main title, from Vue!!',
+    },
+    mounted() {
+        console.log('page is ready!')
+    },
+})
+```
+
+
+
+
+
+
+
+
+
 
 
 
