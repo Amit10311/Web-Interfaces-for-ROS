@@ -104,7 +104,7 @@ And the **main.js** will be improved a little bit:
 
 (* Pay attention to the value of **rosbridge_address**. You must use the one you took from the terminal command!)
 
-```html
+```js
 let vueApp = new Vue({
     el: "#vueApp",
     data: {
