@@ -141,12 +141,19 @@ let vueApp = new Vue({
 
 Pay attention to the value of **rosbridge_address**, it must be the address calculated on your web shell.
 Try to reload the page.
-* You must have the following results on your Console and Network tabs of the **DevTools**:
+* You must have the following results on your **Console** and **Network** tabs of the **DevTools**:
 
 ![image](https://user-images.githubusercontent.com/20908007/230382803-049fb1b3-eaed-4e86-872c-c0758d79a847.png)
 
 
+It means you have reached the point of the connection! Check the next image.
 
+
+![image](https://user-images.githubusercontent.com/20908007/230393457-f8332e1d-eb1a-4e7c-be4c-f439e2869cfd.png)
+
+
+You can see we have a **websocket connection established** (Pay attention to the subtab WS).
+If you click on the connection, you will see more details like the address and messages exchanged. 
 
 
 
