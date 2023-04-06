@@ -139,7 +139,11 @@ let vueApp = new Vue({
 })
 ```
 
+Pay attention to the value of **rosbridge_address**, it must be the address calculated on your web shell.
+Try to reload the page.
+* You must have the following results on your Console and Network tabs of the **DevTools**:
 
+![image](https://user-images.githubusercontent.com/20908007/230382803-049fb1b3-eaed-4e86-872c-c0758d79a847.png)
 
 
 
