@@ -162,6 +162,178 @@ If you click on the connection, you will see more details like the address and m
 ## Topic 3.2  Handling events of the page + Controlling the robot<a name="paragraph2"></a>
 
 
+We have a **Vue.js** web app connecting to our **ROSbridge Server**. 
+Now, let's give more control to our web page. Let's do the following:
+
+* Input the address through the page
+
+* Create a button to connect or disconnect
+
+* Create a button to send velocity commands to the robot in the simulation
+
+
+Let's start from the **main.js** file. It will contain methods to handle all these **events**.
+
+
+```js
+let vueApp = new Vue({
+    el: "#vueApp",
+    data: {
+        // ros connection
+        ros: null,
+        rosbridge_address: 'wss://i-0734dfc7411934198.robotigniteacademy.com/rosbridge/',
+        connected: false,
+        // page content
+        menu_title: 'Connection',
+        main_title: 'Main title, from Vue!!',
+    },
+    methods: {
+        connect: function() {
+            // define ROSBridge connection object
+            this.ros = new ROSLIB.Ros({
+                url: this.rosbridge_address
+            })
+
+            // define callbacks
+            this.ros.on('connection', () => {
+                this.connected = true
+                console.log('Connection to ROSBridge established!')
+            })
+            this.ros.on('error', (error) => {
+                console.log('Something went wrong when trying to connect')
+                console.log(error)
+            })
+            this.ros.on('close', () => {
+                this.connected = false
+                console.log('Connection to ROSBridge was closed!')
+            })
+        },
+        disconnect: function() {
+            this.ros.close()
+        },
+        sendCommand: function() {
+            let topic = new ROSLIB.Topic({
+                ros: this.ros,
+                name: '/cmd_vel',
+                messageType: 'geometry_msgs/Twist'
+            })
+            let message = new ROSLIB.Message({
+                linear: { x: 1, y: 0, z: 0, },
+                angular: { x: 0, y: 0, z: 0.5, },
+            })
+            topic.publish(message)
+        },
+    },
+    mounted() {
+        // page is ready
+        console.log('page is ready!')
+    },
+})
+```
+
+<p align="center"><b>
+Code explanation 
+</b></p>
+ 
+
+In our **data** attribute, we are defining 3 new attributes: **ros, rosbridge_address, and connected**. 
+
+* The first one will contain the connection handler to the rosbridge server. 
+* The second stores the address of the rosbridge server. 
+* Finally, the **connected** variable is a flag of the connection status.
+
+# 
+
+Next, we have something new about Vue.js, which is the **methods** attribute.
+We can define functions inside this attribute, all of them, as the **data attribute** can be used inside the Vue app scope. 
+The first method, **connect**, contains the instructions we put inside **mounted** previously.
+
+
+Here we have some instructions that rely on **roslib.js**. We have the object installation `new ROSLIB.Ros`, that creates a connection. It's necessary to pass the parameters `url`.
+
+Next, we define some **callbacks**. The connection to the `rosbridge server` is asynchronous. 
+So, events like **connection, error**, and **close** must be handled like that: `ros.on("event_name"), () => {`. 
+
+# 
+
+The second method, **disconnect**, is quite simple and just closes the connection to the `rosbridge server`. 
+It's important to notice here that the variable `this.ros` refers to the same this.ros we have worked with on the **connected** methods.
+That's because the framework provides this scope between the methods.
+
+The **topic** needs the following parameters:
+
+* ros connection
+* name of the topic
+* type of the message
+
+And the message itself must be a JavaScript object that contains exactly the same structure of ROS message. 
+
+* You can check, for example, in a web shell the structure of **`geometry_msgs/Twist`**:
+
+```
+$ rosmsg show geometry_msgs/Twist
+```
+
+```py
+ geometry_msgs/Vector3 linear
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Vector3 angular
+      float64 x
+      float64 y
+      float64 z
+```
+
+Finally, we call the method **publish** of the object **topic**, passing the message as parameter.
+
+<p align="center"><b>
+ index.html
+</b></p>
+
+Now, let's finish the implementation in our **index.html** file. 
+
+```html
+<main id="vueApp">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>{{ menu_title }}</h3>
+                        <hr>
+                        <label>ROSBridge address</label>
+                        <br>
+                        <input type="text" v-model="rosbridge_address" />
+                        <br>
+                        <button class="mt-2 btn btn-success" v-if="connected" @click="disconnect">Connected!</button>
+                        <button class="mt-2 btn btn-primary" v-else @click="connect">Connect!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-center">{{ main_title }}</h2>
+                        <hr>
+                        <p>Some actions for the robot</p>
+                        <button class="mt-2 btn btn-primary" :disabled="!connected" @click="sendCommand">Move the robot!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+```
+
+<p align="center"><b>
+Code Explanation 
+</b></p>
+ 
+
+
+
+
 
 
 
